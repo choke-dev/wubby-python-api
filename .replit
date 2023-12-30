@@ -1,0 +1,16 @@
+modules = ["python-3.10:v18-20230807-322e88b"]
+
+hidden = [".pythonlibs"]
+run = "python -m wubby_python_api run --port 8080"
+compile = "make install"
+
+[nix]
+channel = "stable-23_05"
+
+[unitTest]
+language = "python3"
+
+[deployment]
+run = ["sh", "-c", "python -m wubby_python_api run --port 8080"]
+deploymentTarget = "cloudrun"
+build = ["sh", "-c", "make install"]

@@ -23,18 +23,18 @@ def read(*paths, **kwargs):
 
 
 description = """
-wubby_python_api API helps you do awesome stuff. 🚀
+The Wubby API is a RESTful API for the roblox building game, [Wubby](https://www.roblox.com/games/12519560096)
 """
 
 app = FastAPI(
-    title="wubby_python_api",
+    title="Wubby API",
     description=description,
     version=read("VERSION"),
-    terms_of_service="http://wubby_python_api.com/terms/",
+    #terms_of_service="http://wubby_python_api.com/terms/",
     contact={
         "name": "choke-dev",
-        "url": "http://wubby_python_api.com/contact/",
-        "email": "choke-dev@wubby_python_api.com",
+        #"url": "http://wubby_python_api.com/contact/",
+        "email": "admin@choke.dev",
     },
     license_info={
         "name": "The Unlicense",
